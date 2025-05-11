@@ -51,7 +51,6 @@ Before running the chatbot, ensure that you have the following installed:
    YouTube allows users to upload videos in various formats, including MP4, MOV, and AVI.
    YouTube's algorithm recommends videos based on the user's watch history and preferences.
 
-
 2. Run the Chatbot:
    Once everything is set up, you can interact with the bot by running the your main script.
 
