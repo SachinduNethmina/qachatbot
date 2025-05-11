@@ -56,11 +56,11 @@ Before running the chatbot, ensure that you have the following installed:
 
    Here is an example of how you can use the bot in example main.py:
    ```python
-   from chatbot.bot import YouTubeQAChatBot
+   from chatbot.bot import QAChatBot
 
    def main():
        # Create an instance of the chatbot
-       bot = YouTubeQAChatBot()
+       bot = QAChatBot()
 
        # Load the sentences from the text file
        bot.load_sentences('qachatbot/sentences.txt')
