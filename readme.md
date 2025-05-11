@@ -21,7 +21,6 @@ Before running the chatbot, ensure that you have the following installed:
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/SachinduNethmina/qachatbot
-   cd qa-chatbot
 
 2. Create a virtual environment (optional but recommended for isolating dependencies):
    ```bash
@@ -56,7 +55,7 @@ Before running the chatbot, ensure that you have the following installed:
 
    Here is an example of how you can use the bot in example main.py:
    ```python
-   from chatbot.bot import QAChatBot
+   from qachatbot.bot import QAChatBot
 
    def main():
        # Create an instance of the chatbot
