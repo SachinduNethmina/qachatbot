@@ -77,9 +77,9 @@ Before running the chatbot, ensure that you have the following installed:
 3. Running the Script:
    To interact with the bot, simply run the following command in your terminal:
    ```bash
-   python main.py```
+   python main.py
 
-   You will see an output like this:
+You will see an output like this:
    
-   User: What is Python?
-   Bot: Python is a high-level programming language.
+User: What is Python?
+Bot: Python is a high-level programming language.
