@@ -42,7 +42,15 @@ Before running the chatbot, ensure that you have the following installed:
 ### How to Use
 
 1. Prepare Your Data:
-   Edit the `qachatbot/sentences.txt` file or create your custom text file to include the text that the bot will use to answer questions. This can be any data related to YouTube, a specific video, or a general FAQ document.
+   Edit the `qachatbot/sentences.txt` file or create your custom text file to include the text that the bot will use to answer questions. This can be any data related to a general FAQ document.
+
+   Example content for `sentences.txt`:
+   ```text
+   YouTube is a video-sharing platform that allows users to upload, view, and share videos.
+   The platform was created by three former PayPal employees: Chad Hurley, Steve Chen, and Jawed Karim in February 2005.
+   YouTube allows users to upload videos in various formats, including MP4, MOV, and AVI.
+   YouTube's algorithm recommends videos based on the user's watch history and preferences.
+
 
 2. Run the Chatbot:
    Once everything is set up, you can interact with the bot by running the your main script.
@@ -56,7 +64,7 @@ Before running the chatbot, ensure that you have the following installed:
        bot = YouTubeQAChatBot()
 
        # Load the sentences from the text file
-       bot.load_sentences('sentences.txt')
+       bot.load_sentences('qachatbot/sentences.txt')
 
        # Ask a question and get the response
        question = "What is youtube?"
@@ -69,9 +77,9 @@ Before running the chatbot, ensure that you have the following installed:
 3. Running the Script:
    To interact with the bot, simply run the following command in your terminal:
    ```bash
-   python main.py
+   python main.py```
 
    You will see an output like this:
-   ```pgsql
+   
    User: What is Python?
    Bot: Python is a high-level programming language.
