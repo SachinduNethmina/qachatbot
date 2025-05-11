@@ -20,5 +20,58 @@ Before running the chatbot, ensure that you have the following installed:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/qa-chatbot.git
+   git clone https://github.com/SachinduNethmina/qachatbot
    cd qa-chatbot
+
+2. Create a virtual environment (optional but recommended for isolating dependencies):
+   ```bash
+   python -m venv .venv
+
+3. Activate the virtual environment:
+   - Windows:
+      ```bash
+      .venv\Scripts\activate
+   - macOS/Linux:
+      ```bash
+      source .venv/bin/activate
+
+4. Install the required dependencies from `qachatbot/requirements.txt`:
+   ```bash
+   pip install -r qachatbot/requirements.txt
+
+### How to Use
+
+1. Prepare Your Data:
+   Edit the `qachatbot/sentences.txt` file or create your custom text file to include the text that the bot will use to answer questions. This can be any data related to YouTube, a specific video, or a general FAQ document.
+
+2. Run the Chatbot:
+   Once everything is set up, you can interact with the bot by running the your main script.
+
+   Here is an example of how you can use the bot in example main.py:
+   ```python
+   from chatbot.bot import YouTubeQAChatBot
+
+   def main():
+       # Create an instance of the chatbot
+       bot = YouTubeQAChatBot()
+
+       # Load the sentences from the text file
+       bot.load_sentences('sentences.txt')
+
+       # Ask a question and get the response
+       question = "What is youtube?"
+       print("User:", question)
+       print("Bot:", bot.ask_question(question))
+
+   if __name__ == "__main__":
+       main()
+
+3. Running the Script:
+   To interact with the bot, simply run the following command in your terminal:
+   ```bash
+   python main.py
+
+   You will see an output like this:
+   ```pgsql
+   User: What is Python?
+   Bot: Python is a high-level programming language.
